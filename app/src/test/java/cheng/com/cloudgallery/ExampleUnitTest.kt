@@ -1,4 +1,4 @@
-package pak.com.cloudgallery
+package cheng.com.cloudgallery
 
 import org.junit.Test
 
