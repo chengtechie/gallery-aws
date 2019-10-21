@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:background="#673AB7"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/operation"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onEditClicked"
+            android:background="#FF9800"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onDeleteClicked"
+            android:background="#F44336"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onCancelClicked"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+</LinearLayout>
