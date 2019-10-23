@@ -6,6 +6,7 @@ class Picture() {
 
     var drawableId: Int? = null
     var uploadTime: String? = null
+    var updateTime: String? = null
     var description: String? = null
     var bitmap: Bitmap? = null
 

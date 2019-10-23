@@ -41,6 +41,17 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
+        android:id="@+id/email"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="textEmailAddress" />
+
+    <EditText
         android:id="@+id/password"
         android:layout_width="275dp"
         android:layout_height="wrap_content"
@@ -48,7 +59,7 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/lastName"
+        app:layout_constraintTop_toBottomOf="@id/email"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
@@ -60,7 +71,9 @@
         android:background="#FF9800"
         android:text="@string/register"
         android:textSize="18sp"
+        android:onClick="onRegisterClicked"
         app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 

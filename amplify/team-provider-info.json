@@ -1,0 +1,19 @@
+{
+    "cloud": {
+        "awscloudformation": {
+            "AuthRoleName": "cloudgallery-cloud-20191021174114-authRole",
+            "UnauthRoleArn": "arn:aws:iam::062116931658:role/cloudgallery-cloud-20191021174114-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::062116931658:role/cloudgallery-cloud-20191021174114-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "cloudgallery-cloud-20191021174114-deployment",
+            "UnauthRoleName": "cloudgallery-cloud-20191021174114-unauthRole",
+            "StackName": "cloudgallery-cloud-20191021174114",
+            "StackId": "arn:aws:cloudformation:us-east-1:062116931658:stack/cloudgallery-cloud-20191021174114/a7682cc0-f464-11e9-9a13-0a5ca37ccc16"
+        },
+        "categories": {
+            "auth": {
+                "cloudgalleryaa166766": {}
+            }
+        }
+    }
+}

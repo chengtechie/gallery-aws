@@ -27,17 +27,20 @@ class MyRecyclerAdapter(pics: List<Picture>): RecyclerView.Adapter<MyRecyclerAda
             holder.picture!!.setImageBitmap(pictures[position].bitmap)
         }
         holder.uploadTime!!.text = pictures[position].uploadTime
+        holder.updateTime!!.text = pictures[position].updateTime
         holder.description!!.text = pictures[position].description
     }
 
     inner class PictureViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnLongClickListener, View.OnClickListener {
         var picture: ImageView? = null
         var uploadTime: TextView? =  null
+        var updateTime: TextView? = null
         var description: TextView? = null
 
         init {
             picture = view.findViewById(R.id.picture)!!
             uploadTime = view.findViewById(R.id.uploadTime)!!
+            updateTime = view.findViewById(R.id.updateTime)!!
             description = view.findViewById(R.id.description)!!
             view.setOnClickListener(this)
             view.setOnLongClickListener(this)

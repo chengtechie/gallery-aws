@@ -7,24 +7,26 @@
     tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/appname"
+        android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:textSize="50sp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/app_name"
+        android:textSize="25sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="@string/app_name" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
         android:id="@+id/username"
         android:layout_width="275dp"
         android:layout_height="wrap_content"
+        android:layout_margin="30dp"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/appName"
         app:layout_constraintBottom_toTopOf="@id/password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -37,7 +39,7 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@+id/username"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
@@ -49,6 +51,8 @@
         android:background="#FF9800"
         android:text="@string/login"
         android:textSize="18sp"
+        android:onClick="onLoginClicked"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintBottom_toTopOf="@id/google_sign_in"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -75,9 +79,12 @@
 
     <TextView
         android:id="@+id/register"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="onRegisterClicked"
         android:text="@string/registerText"
         android:textAllCaps="false"
         android:textColor="#000000"

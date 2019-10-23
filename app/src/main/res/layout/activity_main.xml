@@ -31,4 +31,15 @@
         app:backgroundTint="#FFC107"
         app:srcCompat="@drawable/upload" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/awsUploadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="onAwsUploadClicked"
+        app:backgroundTint="#FFFFFF"
+        app:layout_anchor="@id/uploadBtn"
+        app:srcCompat="@drawable/upload" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

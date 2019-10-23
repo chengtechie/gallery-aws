@@ -2,6 +2,7 @@
     <string name="app_name">Cloud Gallery</string>
     <string name="login">Login</string>
     <string name="username">Username</string>
+    <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="registerText"><u>Do not have an account? Click here to register</u></string>
     <string name="register">Register</string>
@@ -9,6 +10,7 @@
     <string name="firstName">First Name</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="uploadTime">Upload Time</string>
+    <string name="updateTime">Update Time</string>
     <string name="description">Description</string>
     <string name="operation">Operations: </string>
     <string name="edit">Edit</string>
