@@ -13,7 +13,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/inputDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFEB3B"
@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#F44336"
+            android:onClick="onRealEditClicked"
             android:text="@string/edit" />
 
         <Button
